@@ -8,7 +8,7 @@ function Szamolas(){
     {
         KapacitNagysag = KapacitNagysag * 1000;
     }
-    else if (kapacitFajta == "TB")
+    else if (KapacitFajta == "TB")
     {
         KapacitNagysag = KapacitNagysag * 1000000;
     }

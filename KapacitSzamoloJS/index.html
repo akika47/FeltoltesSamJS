@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FeltoltesiSebesseg</title>
+</head>
+<body>
+    <form id="container">
+        <label>Kapacitás: </label>
+        <input type="number" name="KapacitNagy" id="KapacitNagysag">
+        <select id="KapacitFajta" name="KapacitFajta">
+            <option value="MB">MB</option>
+            <option value="GB">GB</option>
+            <option value="TB">TB</option>
+        </select>
+        <br>
+
+        <label>Átviteli sebesség: <span id="SliderErtek">3220</span> </label>
+        <input type="range" name="Slider" id="AtviteliNagysagSlider" min="10" max="5000" value="3220" oninput="Kiir()">
+        <select id="AtviteliFajta" name="AtviteliFajta">
+            <option value="Mbps">Mbps</option>
+            <option value="KBps">KBps</option>
+            <option value="MBps">MBps</option>
+            <option value="GBps">GBps</option>
+        </select>
+        <br>
+        <button type="button" onclick="Szamolas()">Számol</button> 
+        <p>Eredmény: <span id="EredmenyKiir">?</span></p>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
